@@ -69,8 +69,8 @@ pipeline{
             steps{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
-                       sh "docker tag hotstar acecloudacademy/hotstar:latest "
-                       sh "docker push acecloudacademy/hotstar:latest "
+                       sh "docker tag hotstar mallikarjungj/hotstar:latest "
+                       sh "docker push mallikarjungj/hotstar:latest "
                     }
                 }
             }
@@ -94,9 +94,9 @@ pipeline{
                     <p>Started by: ${buildUser}</p>
                     <p>Build URL: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
                 """,
-                to: 'vijaybl2706@gmail.com',
-                from: 'vijaybl2706@gmail.com',
-                replyTo: 'vijaybl2706@gmail.com',
+                to: 'mallikarjunagj1999@gmail.com',
+                from: 'mallikarjunagj1999@gmail.com',
+                replyTo: 'mallikarjunagj1999@gmail.com',
                 mimeType: 'text/html',
                 attachmentsPattern: 'trivyfs.txt,trivyimage.txt'
             )
